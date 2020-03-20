@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Math
+namespace HelloWorld.Math
 {
     public class Calculator
     {

@@ -32,10 +32,11 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Calculator\Calculator.cs" />
+    <Compile Include="Math\Calculator.cs" />
+    <Compile Include="Math\LogicalCalculator.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Calculator\" />
+    <Folder Include="Math\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
