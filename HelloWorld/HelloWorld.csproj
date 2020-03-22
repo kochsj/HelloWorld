@@ -36,6 +36,7 @@
     <Compile Include="Math\LogicalCalculator.cs" />
     <Compile Include="Strings\UseYourWords.cs" />
     <Compile Include="ObjectEnum\EnumerationStation.cs" />
+    <Compile Include="ObjectEnum\PersonMaker.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Math\" />

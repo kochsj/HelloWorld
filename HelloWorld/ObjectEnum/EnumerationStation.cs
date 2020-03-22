@@ -10,9 +10,5 @@ namespace HelloWorld.ObjectEnum
             Green = 3,
             Red = 4
         }
-        public static void ConstructEnum(string[] args)
-        {
-
-        }
     }
 }

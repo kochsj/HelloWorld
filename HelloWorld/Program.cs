@@ -21,6 +21,9 @@ namespace Program
             ListStringsOut();
             MultiLinePrint();
             KeyValuePair();
+            ReferenceTypes();
+            MakeJohn();
+            MakeMary();
         }
 
         public static void CalculateThings(int i)
@@ -77,6 +80,34 @@ namespace Program
             var color = "Purple";
             var colorMethod = Enum.Parse(typeof(EnumerationStation.ColorValues), color);
             Console.WriteLine((int)colorMethod);
+        }
+
+        public static void ReferenceTypes()
+        {
+            ValueVsReferenceTypes.ValueAssignment();
+            ValueVsReferenceTypes.ReferenceAssignment();
+        }
+
+        public static void MakeJohn()
+        {
+            var john = new Person(30);
+            john.GetOlder();
+            Console.WriteLine(string.Format("Should be age 31: {0}", john.GetAge()));
+        }
+
+        public static void MakeMary()
+        {
+            var mary = new AlternatePerson() { Age = 25 };
+
+            void GetOlder(AlternatePerson person)
+            {
+                person.Age += 1;
+            }
+
+            GetOlder(mary);
+            GetOlder(mary);
+            GetOlder(mary);
+            Console.WriteLine(string.Format("Should be age 28: {0}", mary.Age));
         }
     }
 }
