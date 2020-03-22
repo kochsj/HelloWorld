@@ -1,6 +1,7 @@
 ﻿using System;
 using HelloWorld.Math;
 using HelloWorld.Strings;
+using HelloWorld.ObjectEnum;
 
 namespace Program
 {
@@ -18,6 +19,8 @@ namespace Program
             LogicThings();
             MadLib();
             ListStringsOut();
+            MultiLinePrint();
+            KeyValuePair();
         }
 
         public static void CalculateThings(int i)
@@ -49,6 +52,31 @@ namespace Program
             var arr = new string[5] { "John", "Jacob", "Jingle", "Himer", "Smith" };
             string a = UseYourWords.ListThePeople(arr, 5);
             Console.WriteLine(a);
+        }
+
+        public static void MultiLinePrint()
+        {
+            string a = UseYourWords.VerbatimString();
+            Console.WriteLine(a);
+        }
+
+        public static void KeyValuePair()
+        {
+            // using value casting () we can get a value or a key from our enum
+            var key = EnumerationStation.ColorValues.Red;
+            Console.WriteLine((int)key);
+
+            // can convert ToString also 
+            string keyString = EnumerationStation.ColorValues.Red.ToString();
+            Console.WriteLine(keyString);
+
+            var value = 3;
+            Console.WriteLine((EnumerationStation.ColorValues)value);
+
+            // convert string to enum
+            var color = "Purple";
+            var colorMethod = Enum.Parse(typeof(EnumerationStation.ColorValues), color);
+            Console.WriteLine((int)colorMethod);
         }
     }
 }

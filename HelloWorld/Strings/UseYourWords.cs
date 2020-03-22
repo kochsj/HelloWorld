@@ -25,5 +25,20 @@ namespace HelloWorld.Strings
             concatString += b;
             return concatString;
         }
+
+        public static string VerbatimString()
+        {
+            // use @ to create a verbatim string (excape char not needed)
+            string a = @"Please follow these steps:
+1) Open your terminal
+2) Navigate to C:/user/you/theRepo
+3) Have fun!
+
+Thank you for playing.
+- SK
+
+";
+            return a;
+        }
     }
 }

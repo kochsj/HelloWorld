@@ -35,10 +35,12 @@
     <Compile Include="Math\Calculator.cs" />
     <Compile Include="Math\LogicalCalculator.cs" />
     <Compile Include="Strings\UseYourWords.cs" />
+    <Compile Include="ObjectEnum\EnumerationStation.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Math\" />
     <Folder Include="Strings\" />
+    <Folder Include="ObjectEnum\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
